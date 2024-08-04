@@ -1,7 +1,11 @@
+import HomeSection from "./home/HomeSection";
+import Navbar from "./components/Navbar";
+
 const App = () => {
   return (
-    <div>
-      <h2 className="text-red-500">Hello world!</h2>
+    <div className="text-white">
+      <Navbar />
+      <HomeSection />
     </div>
   );
 };
