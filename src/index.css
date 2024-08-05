@@ -5,4 +5,5 @@
 :root {
   background-color: #101010;
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
