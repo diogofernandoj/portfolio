@@ -4,6 +4,7 @@ import BenefitsSection from "./benefits/BenefitsSection";
 import BackgroundHome from "./components/BackgroundHome";
 import AboutSection from "./about/AboutSection";
 import SkillsSection from "./skills/SkillsSection";
+import FeaturesSection from "./features/FeaturesSection";
 
 const App = () => {
   return (
@@ -11,9 +12,10 @@ const App = () => {
       <Navbar />
       <HomeSection />
       <BackgroundHome />
-      <BenefitsSection />
+      <FeaturesSection />
       <AboutSection />
       <SkillsSection />
+      <BenefitsSection />
     </div>
   );
 };
