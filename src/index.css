@@ -4,6 +4,22 @@
 
 :root {
   background-color: #101010;
+  color: #fff;
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+  display: flex;
+  width: max-content;
 }
