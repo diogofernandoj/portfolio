@@ -5,6 +5,7 @@ import BackgroundHome from "./components/BackgroundHome";
 import AboutSection from "./about/AboutSection";
 import SkillsSection from "./skills/SkillsSection";
 import FeaturesSection from "./features/FeaturesSection";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -13,9 +14,10 @@ const App = () => {
       <HomeSection />
       <BackgroundHome />
       <FeaturesSection />
-      <AboutSection />
-      <SkillsSection />
       <BenefitsSection />
+      <SkillsSection />
+      <AboutSection />
+      <Footer />
     </div>
   );
 };
