@@ -5,7 +5,7 @@ import { MdOutlineBusiness } from "react-icons/md";
 const FeaturesSection = () => {
   return (
     <div
-      id="benefits"
+      id="features"
       className="relative flex justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500"
     >
       <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[20px] border-r-[20px] border-t-[20px] border-transparent border-t-brand-background"></div>

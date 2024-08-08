@@ -15,7 +15,7 @@ const HomeSection = () => {
       </p>
       <Links />
       <a
-        href="#benefits"
+        href="#features"
         className="absolute bottom-0 animate-bounce transition hover:text-brand-primary"
       >
         <MdKeyboardDoubleArrowDown size={36} />
