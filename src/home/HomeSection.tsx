@@ -7,16 +7,16 @@ const HomeSection = () => {
       <img src="src/assets/images/profile-pic.svg" className="h-24 w-24" />
       <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">
         Eleve seu negócio ao próximo nível{" "}
-        <span className="text-brand-primary">através da tecnologia</span>!
+        <span className="text-primary">através da tecnologia</span>!
       </h2>
-      <p className="text-gray-400 font-semibold lg:text-lg">
-        Eu sou o Diogo Jorge, desenvolvedor Full-Stack e aumento a lucratividade
+      <p className="text-muted font-semibold lg:text-lg">
+        Eu sou Diogo Jorge, desenvolvedor Full-Stack e aumento a lucratividade
         da sua empresa com soluções inovadoras.
       </p>
       <Links />
       <a
         href="#features"
-        className="absolute bottom-0 animate-bounce transition hover:text-brand-primary"
+        className="absolute bottom-0 animate-bounce transition hover:text-primary"
       >
         <MdKeyboardDoubleArrowDown size={36} />
       </a>

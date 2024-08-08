@@ -55,7 +55,7 @@ const SkillsSection = () => {
   return (
     <div className="overflow-hidden relative">
       <h2 className="text-center font-bold text-3xl mt-12 mb-8">
-        Tecnologias<span className="text-brand-primary">.</span>
+        Tecnologias<span className="text-primary">.</span>
       </h2>
       <div className="flex gap-6 w-auto animate-slide">
         {logos.concat(logos).map((logo) => (
