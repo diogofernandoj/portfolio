@@ -9,6 +9,7 @@ export default {
           secondary: "#00A4FF",
           background: "#101010",
           border: "#191919",
+          text: "#929292",
         },
       },
     },
