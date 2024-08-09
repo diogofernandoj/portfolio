@@ -8,6 +8,8 @@ interface ProjectItemProps {
     category: string;
     description: string;
     techs: IconType[];
+    repository_link: string;
+    deploy_link: string;
   };
 }
 
@@ -25,13 +27,15 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
         <p className="text-muted mt-4 text-lg">{project.description}</p>
         <div className="flex items-center gap-4 my-6">
           <a
-            href="#"
+            target="blank"
+            href={project.deploy_link}
             className="bg-primary/20 text-primary text-sm font-semibold px-2 py-1 rounded-full transition shadow-md hover:shadow-primary/30"
           >
             Acessar projeto
           </a>
           <a
-            href="#"
+            target="blank"
+            href={project.repository_link}
             className="bg-primary/20 text-primary text-sm font-semibold px-2 py-1 rounded-full transition shadow-md hover:shadow-primary/30"
           >
             Acessar repositório
