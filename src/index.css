@@ -31,6 +31,7 @@
     --chart-5: 340 75% 55%;
 
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
   }
 }
 

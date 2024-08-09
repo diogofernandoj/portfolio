@@ -12,7 +12,7 @@ import { PROJECTS } from "./constants/projects";
 
 const ProjectsSection = () => {
   return (
-    <div>
+    <div id="projects">
       <div className="flex flex-col mt-12 gap-12 md:hidden">
         {PROJECTS.map((item) => (
           <ProjectItem key={item.id} project={item} />

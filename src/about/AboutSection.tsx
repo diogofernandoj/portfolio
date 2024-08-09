@@ -2,7 +2,7 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const AboutSection = () => {
   return (
-    <div className="flex justify-center items-center my-12 p-5">
+    <div id="about" className="flex justify-center items-center my-12 p-5">
       <div className="lg:flex-row lg:w-[70%] max-w-5xl flex flex-col items-center gap-12 w-[80%]">
         <img
           src="src/assets/images/guy-with-certificate.svg"

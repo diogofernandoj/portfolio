@@ -3,7 +3,10 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 const BenefitsSection = () => {
   return (
-    <div className="flex flex-col gap-12 mt-12 p-8 lg:p-20 lg:flex-row min-h-screen">
+    <div
+      id="benefits"
+      className="flex flex-col gap-12 mt-12 p-8 lg:p-20 lg:flex-row min-h-screen"
+    >
       <div className="flex flex-col gap-4 lg:w-2/5 lg:sticky lg:top-24 h-max mb-10">
         <h2 className="text-3xl font-bold mb-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
