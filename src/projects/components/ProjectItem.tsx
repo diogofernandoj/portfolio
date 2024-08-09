@@ -45,7 +45,7 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
           <h3 className="font-semibold">Tecnologias utilizadas:</h3>
           <div className="flex items-center gap-4 text-2xl">
             {project.techs.map((TechIcon, index) => (
-              <TechIcon key={index} />
+              <TechIcon key={index} className="text-muted" />
             ))}
           </div>
         </div>
