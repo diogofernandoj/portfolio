@@ -1,3 +1,5 @@
+import { fadeIn } from "@/animations/variants";
+import { motion } from "framer-motion";
 import {
   BiLogoJavascript,
   BiLogoPostgresql,
@@ -54,10 +56,22 @@ const SkillsSection = () => {
 
   return (
     <div className="overflow-hidden relative">
-      <h2 className="text-center font-bold text-3xl mt-12 mb-8">
+      <motion.h2
+        variants={fadeIn("right", 0.5)}
+        initial="hidden"
+        whileInView="show"
+        exit="hidden"
+        className="text-center font-bold text-3xl mt-12 mb-8"
+      >
         Tecnologias<span className="text-primary">.</span>
-      </h2>
-      <div className="flex gap-6 w-auto animate-slide">
+      </motion.h2>
+      <motion.div
+        variants={fadeIn("left", 0)}
+        initial="hidden"
+        whileInView="show"
+        exit="hidden"
+        className="flex gap-6 w-auto animate-slide"
+      >
         {logos.concat(logos).map((logo) => (
           <div
             key={logo.id}
@@ -66,7 +80,7 @@ const SkillsSection = () => {
             <span className="opacity-10">{logo.icon}</span>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
