@@ -5,14 +5,22 @@ import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { MenuIcon } from "lucide-react";
 import { Separator } from "./ui/separator";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/animations/variants";
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-20 border-b border-solid border-border bg-background fixed z-20">
+    <motion.nav
+      variants={fadeIn("down", 1)}
+      initial="hidden"
+      whileInView="show"
+      exit="hidden"
+      className="w-full h-20 border-b border-solid border-border bg-background fixed z-20"
+    >
       <div className="w-11/12 h-full mx-auto flex justify-between items-center">
-        <h2 className="font-bold text-2xl">
+        <a href="#" className="font-bold text-2xl">
           Diogo<span className="text-primary">.</span>
-        </h2>
+        </a>
 
         <div className="hidden items-center gap-2 lg:flex">
           <a href="#">
@@ -39,13 +47,15 @@ const Navbar = () => {
 
         <div className="lg:flex items-center gap-4 hidden">
           <a
-            href="#"
+            target="blank"
+            href="https://linkwhats.app/445301"
             className="font-semibold text-primary text-center hover:underline"
           >
             Fale comigo
           </a>
           <a
-            href="#"
+            href="cv.pdf"
+            download="cv"
             className="font-semibold text-white text-sm mx-auto w-max bg-primary px-4 py-2 rounded-full flex items-center gap-1 transition hover:scale-95"
           >
             Baixar currículo <MdDownload />
@@ -70,19 +80,24 @@ const Navbar = () => {
               <a href="#about">Quem sou</a>
             </SheetClose>
             <Separator />
-            <a href="#" className="font-semibold text-primary text-center">
+            <a
+              target="blank"
+              href="https://linkwhats.app/445301"
+              className="font-semibold text-primary text-center"
+            >
               Fale comigo
             </a>
             <a
-              href="#"
-              className="font-semibold text-white mx-auto w-max bg-primary px-4 py-2 rounded-full flex items-center gap-1"
+              href="cv.pdf"
+              download="cv"
+              className="font-semibold text-white text-sm mx-auto w-max bg-primary px-4 py-2 rounded-full flex items-center gap-1"
             >
               Baixar currículo <MdDownload />
             </a>
           </SheetContent>
         </Sheet>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
