@@ -29,6 +29,8 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+
+    scroll-behavior: smooth;
   }
 }
 
@@ -39,4 +41,19 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+  display: flex;
+  width: max-content;
 }
