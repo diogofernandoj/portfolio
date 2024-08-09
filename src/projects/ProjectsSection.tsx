@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Autoplay from "embla-carousel-autoplay";
 
 import {
@@ -8,11 +9,18 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import ProjectItem from "./components/ProjectItem";
-import { PROJECTS } from "./constants/projects";
+import { PROJECTS } from "../constants/projects";
+import { fadeIn } from "@/animations/variants";
 
 const ProjectsSection = () => {
   return (
-    <div id="projects">
+    <motion.div
+      variants={fadeIn("up", 0.5)}
+      initial="hidden"
+      whileInView="show"
+      exit="hidden"
+      id="projects"
+    >
       <div className="flex flex-col mt-12 gap-12 md:hidden">
         {PROJECTS.map((item) => (
           <ProjectItem key={item.id} project={item} />
@@ -39,7 +47,7 @@ const ProjectsSection = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-    </div>
+    </motion.div>
   );
 };
 
