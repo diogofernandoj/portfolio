@@ -1,9 +1,17 @@
+import { motion } from "framer-motion";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Links from "./components/Links";
+import { fadeIn } from "@/animations/variants";
 
 const HomeSection = () => {
   return (
-    <div className="w-[90%] max-w-3xl md:w-[60%] lg:w-[50%] h-[calc(100vh-7rem)] lg:h-[calc(100vh-10rem)] mx-auto md:pt-40 pt-24 flex flex-col gap-4 justify-center items-center text-center">
+    <motion.div
+      variants={fadeIn("up", 0.5)}
+      initial="hidden"
+      whileInView="show"
+      exit="hidden"
+      className="w-[90%] max-w-3xl md:w-[60%] lg:w-[50%] h-[calc(100vh-7rem)] lg:h-[calc(100vh-10rem)] mx-auto md:pt-40 pt-24 flex flex-col gap-4 justify-center items-center text-center"
+    >
       <img src="src/assets/images/profile-pic.svg" className="h-24 w-24" />
       <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">
         Eleve seu negócio ao próximo nível{" "}
@@ -20,7 +28,7 @@ const HomeSection = () => {
       >
         <MdKeyboardDoubleArrowDown size={36} />
       </a>
-    </div>
+    </motion.div>
   );
 };
 
