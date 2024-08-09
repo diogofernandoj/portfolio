@@ -1,5 +1,8 @@
-import { FaCheck } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/animations/variants";
+import { BENEFITS } from "@/constants/benefits";
+import BenefitItem from "./components/BenefitItem";
 
 const BenefitsSection = () => {
   return (
@@ -7,7 +10,13 @@ const BenefitsSection = () => {
       id="benefits"
       className="flex flex-col gap-12 mt-12 p-8 lg:p-20 lg:flex-row min-h-screen"
     >
-      <div className="flex flex-col gap-4 lg:w-2/5 lg:sticky lg:top-24 h-max mb-10">
+      <motion.div
+        variants={fadeIn("up", 0)}
+        initial="hidden"
+        whileInView="show"
+        exit="hidden"
+        className="flex flex-col gap-4 lg:w-2/5 lg:sticky lg:top-24 h-max mb-10"
+      >
         <h2 className="text-3xl font-bold mb-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
           veniam?
@@ -26,98 +35,12 @@ const BenefitsSection = () => {
           </span>{" "}
           Enviar uma mensagem
         </a>
-      </div>
-      <div className="flex flex-col gap-20 lg:w-3/5 overflow-y-auto">
-        <div className="flex gap-4">
-          <span className="bg-primary text-white rounded-full h-max w-max p-2 mt-2">
-            <FaCheck size={18} />
-          </span>
-          <div className="flex flex-col">
-            <h3 className="text-2xl font-semibold mb-2">
-              Lorem ipsum dolor sit amet consectetur.
-            </h3>
-            <p className="text-muted">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-              animi suscipit cum, voluptatibus optio id itaque officia
-              perspiciatis consequuntur hic earum consequatur?
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-4">
-          <span className="bg-primary text-white rounded-full h-max w-max p-2 mt-2">
-            <FaCheck size={18} />
-          </span>
-          <div className="flex flex-col">
-            <h3 className="text-2xl font-semibold mb-2">
-              Lorem ipsum dolor sit amet consectetur.
-            </h3>
-            <p className="text-muted">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-              animi suscipit cum, voluptatibus optio id itaque officia
-              perspiciatis consequuntur hic earum consequatur?
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-4">
-          <span className="bg-primary text-white rounded-full h-max w-max p-2 mt-2">
-            <FaCheck size={18} />
-          </span>
-          <div className="flex flex-col">
-            <h3 className="text-2xl font-semibold mb-2">
-              Lorem ipsum dolor sit amet consectetur.
-            </h3>
-            <p className="text-muted">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-              animi suscipit cum, voluptatibus optio id itaque officia
-              perspiciatis consequuntur hic earum consequatur?
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-4">
-          <span className="bg-primary text-white rounded-full h-max w-max p-2 mt-2">
-            <FaCheck size={18} />
-          </span>
-          <div className="flex flex-col">
-            <h3 className="text-2xl font-semibold mb-2">
-              Lorem ipsum dolor sit amet consectetur.
-            </h3>
-            <p className="text-muted">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-              animi suscipit cum, voluptatibus optio id itaque officia
-              perspiciatis consequuntur hic earum consequatur?
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-4">
-          <span className="bg-primary text-white rounded-full h-max w-max p-2 mt-2">
-            <FaCheck size={18} />
-          </span>
-          <div className="flex flex-col">
-            <h3 className="text-2xl font-semibold mb-2">
-              Lorem ipsum dolor sit amet consectetur.
-            </h3>
-            <p className="text-muted">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-              animi suscipit cum, voluptatibus optio id itaque officia
-              perspiciatis consequuntur hic earum consequatur?
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-4">
-          <span className="bg-primary text-white rounded-full h-max w-max p-2 mt-2">
-            <FaCheck size={18} />
-          </span>
-          <div className="flex flex-col">
-            <h3 className="text-2xl font-semibold mb-2">
-              Lorem ipsum dolor sit amet consectetur.
-            </h3>
-            <p className="text-muted">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-              animi suscipit cum, voluptatibus optio id itaque officia
-              perspiciatis consequuntur hic earum consequatur?
-            </p>
-          </div>
-        </div>
+      </motion.div>
+
+      <div className="flex flex-col gap-12 lg:w-3/5">
+        {BENEFITS.map((item) => (
+          <BenefitItem key={item.id} benefit={item} />
+        ))}
       </div>
     </div>
   );
