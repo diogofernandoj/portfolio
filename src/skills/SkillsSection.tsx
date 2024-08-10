@@ -72,9 +72,9 @@ const SkillsSection = () => {
         exit="hidden"
         className="flex gap-6 w-auto animate-slide"
       >
-        {logos.concat(logos).map((logo) => (
+        {logos.concat(logos).map((logo, index) => (
           <div
-            key={logo.id}
+            key={index}
             className="flex-none w-20 h-20 flex items-center justify-center"
           >
             <span className="opacity-10">{logo.icon}</span>
