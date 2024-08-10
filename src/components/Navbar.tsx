@@ -1,7 +1,14 @@
 "use client";
 
 import { MdDownload } from "react-icons/md";
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
 import { MenuIcon } from "lucide-react";
 import { Separator } from "./ui/separator";
 import { motion } from "framer-motion";
@@ -59,46 +66,52 @@ const Navbar = () => {
           <a
             href="cv.pdf"
             download="cv"
-            className="font-semibold text-white text-sm mx-auto w-max bg-primary px-4 py-2 rounded-full flex items-center gap-1 transition ease-in hover:bg-white hover:text-primary"
+            className="font-semibold text-white text-sm bg-primary px-4 py-2 rounded-full flex items-center gap-1 transition ease-in hover:bg-white hover:text-primary"
           >
             Baixar currículo <MdDownload />
           </a>
         </div>
-
-        <Sheet>
-          <SheetTrigger className="lg:hidden">
-            <MenuIcon />
-          </SheetTrigger>
-          <SheetContent side="top" className="flex flex-col gap-4">
-            <SheetClose>
-              <a href="#">Início</a>
-            </SheetClose>
-            <SheetClose>
-              <a href="#benefits">Saiba mais</a>
-            </SheetClose>
-            <SheetClose>
-              <a href="#projects">Projetos</a>
-            </SheetClose>
-            <SheetClose>
-              <a href="#about">Quem sou</a>
-            </SheetClose>
-            <Separator />
-            <a
-              target="blank"
-              href="https://linkwhats.app/445301"
-              className="font-semibold text-primary text-center"
+        <div className="lg:hidden">
+          <Sheet>
+            <SheetTitle></SheetTitle>
+            <SheetTrigger>
+              <MenuIcon />
+            </SheetTrigger>
+            <SheetContent
+              side="top"
+              className="flex flex-col items-center gap-4"
             >
-              Fale comigo
-            </a>
-            <a
-              href="cv.pdf"
-              download="cv"
-              className="font-semibold text-white text-sm mx-auto w-max bg-primary px-4 py-2 rounded-full flex items-center gap-1"
-            >
-              Baixar currículo <MdDownload />
-            </a>
-          </SheetContent>
-        </Sheet>
+              <SheetClose asChild>
+                <a href="#">Início</a>
+              </SheetClose>
+              <SheetClose asChild>
+                <a href="#benefits">Saiba mais</a>
+              </SheetClose>
+              <SheetClose asChild>
+                <a href="#projects">Projetos</a>
+              </SheetClose>
+              <SheetClose asChild>
+                <a href="#about">Quem sou</a>
+              </SheetClose>
+              <Separator />
+              <a
+                target="blank"
+                href="https://linkwhats.app/445301"
+                className="font-semibold text-primary text-center"
+              >
+                Fale comigo
+              </a>
+              <a
+                href="cv.pdf"
+                download="cv"
+                className="font-semibold text-white text-sm mx-auto w-max bg-primary px-4 py-2 rounded-full flex items-center gap-1"
+              >
+                Baixar currículo <MdDownload />
+              </a>
+              <SheetDescription></SheetDescription>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </motion.nav>
   );
