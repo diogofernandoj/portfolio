@@ -12,7 +12,7 @@ const FeaturesSection = () => {
     >
       <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[20px] border-r-[20px] border-t-[20px] border-transparent border-t-background"></div>
       <motion.div
-        variants={fadeIn("up", 0.5)}
+        variants={fadeIn("up", 0)}
         initial="hidden"
         whileInView="show"
         exit="hidden"
