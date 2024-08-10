@@ -8,22 +8,22 @@ const BenefitsSection = () => {
   return (
     <div
       id="benefits"
-      className="flex flex-col gap-12 mt-12 p-8 lg:p-20 lg:flex-row min-h-screen"
+      className="flex flex-col gap-12 lg:gap-28 mt-12 p-8 lg:p-20 lg:flex-row min-h-screen"
     >
       <motion.div
         variants={fadeIn("up", 0)}
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
         exit="hidden"
         className="flex flex-col gap-4 lg:w-2/5 lg:sticky lg:top-24 h-max mb-10"
       >
         <h2 className="text-3xl font-bold mb-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          veniam?
+          Quer saber como a tecnologia pode transformar o seu negócio?
         </h2>
         <p className="text-muted">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa harum
-          eaque odit delectus repellendus est alias aspernatur vel illum iste.
+          Sua empresa pode estar perdendo dinheiro por não ter uma boa presença
+          digital, entenda o que um site profissional é capaz de fazer por você.
         </p>
         <a
           href="https://linkwhats.app/445301"

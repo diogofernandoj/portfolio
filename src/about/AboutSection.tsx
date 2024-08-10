@@ -8,6 +8,7 @@ const AboutSection = () => {
       variants={fadeIn("up", 0.5)}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true, amount: 0.3 }}
       exit="hidden"
       id="about"
       className="flex justify-center items-center my-12 p-5"

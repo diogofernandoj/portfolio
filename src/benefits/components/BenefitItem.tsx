@@ -16,11 +16,12 @@ const BenefitItem = ({ benefit }: BenefitItemProps) => {
       variants={fadeIn("up", 0.5)}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true, amount: "all" }}
       exit="hidden"
       className="flex gap-4"
     >
       <span className="bg-primary text-white rounded-full h-max w-max p-2 mt-2">
-        <FaCheck size={18} />
+        <FaCheck size={26} />
       </span>
       <div className="flex flex-col">
         <h3 className="text-2xl font-semibold mb-2">{benefit.header}</h3>
