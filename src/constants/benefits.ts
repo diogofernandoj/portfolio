@@ -1,38 +1,32 @@
 export const BENEFITS = [
   {
     id: 1,
-    header: "Lorem ipsum dolor sit amet consectetur.",
+    header: "Visibilidade online",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione animi suscipit cum, voluptatibus optio id itaque officia perspiciatis consequuntur hic earum consequatur?",
+      "Aumente o alcance da sua empresa, tornando-a facilmente encontrada por clientes locais na internet.",
   },
   {
     id: 2,
-    header: "Lorem ipsum dolor sit amet consectetur.",
+    header: "Facilidade de contato",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione animi suscipit cum, voluptatibus optio id itaque officia perspiciatis consequuntur hic earum consequatur?",
+      "Facilite o contato com clientes através de formulários, WhatsApp e informações de localização.",
   },
   {
     id: 3,
-    header: "Lorem ipsum dolor sit amet consectetur.",
+    header: "Destaque na concorrência",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione animi suscipit cum, voluptatibus optio id itaque officia perspiciatis consequuntur hic earum consequatur?",
+      "Ganhe vantagem competitiva com uma presença digital que coloca sua empresa à frente dos concorrentes.",
   },
   {
     id: 4,
-    header: "Lorem ipsum dolor sit amet consectetur.",
+    header: "Credibilidade",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione animi suscipit cum, voluptatibus optio id itaque officia perspiciatis consequuntur hic earum consequatur?",
+      "Um site profissional melhora a confiança dos clientes, mostrando que sua empresa é séria e confiável.",
   },
   {
     id: 5,
-    header: "Lorem ipsum dolor sit amet consectetur.",
+    header: "Alta conversão",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione animi suscipit cum, voluptatibus optio id itaque officia perspiciatis consequuntur hic earum consequatur?",
-  },
-  {
-    id: 6,
-    header: "Lorem ipsum dolor sit amet consectetur.",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione animi suscipit cum, voluptatibus optio id itaque officia perspiciatis consequuntur hic earum consequatur?",
+      "Ao contratar um programador, você garante que a estrutura, design e funcionalidade da página sejam pensados estrategicamente para converter visitantes em clientes.",
   },
 ];
