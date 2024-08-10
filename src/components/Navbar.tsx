@@ -4,7 +4,6 @@ import { MdDownload } from "react-icons/md";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { MenuIcon } from "lucide-react";
 import { Separator } from "./ui/separator";
-import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/animations/variants";
 
@@ -17,31 +16,35 @@ const Navbar = () => {
       exit="hidden"
       className="w-full h-20 border-b border-solid border-border bg-background fixed z-20"
     >
-      <div className="w-11/12 h-full mx-auto flex justify-between items-center">
-        <a href="#" className="font-bold text-2xl">
+      <div className="w-4/5 h-full mx-auto flex justify-between items-center">
+        <a href="#" className="font-bold text-2xl hover:animate-pulse">
           Diogo<span className="text-primary">.</span>
         </a>
 
-        <div className="hidden items-center gap-2 lg:flex">
-          <a href="#">
-            <Button variant="ghost" className="text-sm opacity-75">
-              Início
-            </Button>
+        <div className="hidden items-center lg:flex">
+          <a
+            href="#"
+            className="text-muted font-semibold px-4 py-2 rounded-lg ease-in transition-all hover:bg-border hover:text-white"
+          >
+            Início
           </a>
-          <a href="#benefits">
-            <Button variant="ghost" className="text-sm opacity-75">
-              Saiba mais
-            </Button>
+          <a
+            href="#benefits"
+            className="text-muted font-semibold px-4 py-2 rounded-lg ease-in transition-all hover:bg-border hover:text-white"
+          >
+            Saiba mais
           </a>
-          <a href="#projects">
-            <Button variant="ghost" className="text-sm opacity-75">
-              Projetos
-            </Button>
+          <a
+            href="#projects"
+            className="text-muted font-semibold px-4 py-2 rounded-lg ease-in transition-all hover:bg-border hover:text-white"
+          >
+            Projetos
           </a>
-          <a href="#about">
-            <Button variant="ghost" className="text-sm opacity-75">
-              Quem sou
-            </Button>
+          <a
+            href="#about"
+            className="text-muted font-semibold px-4 py-2 rounded-lg ease-in transition-all hover:bg-border hover:text-white"
+          >
+            Quem sou
           </a>
         </div>
 
@@ -56,7 +59,7 @@ const Navbar = () => {
           <a
             href="cv.pdf"
             download="cv"
-            className="font-semibold text-white text-sm mx-auto w-max bg-primary px-4 py-2 rounded-full flex items-center gap-1 transition hover:scale-95"
+            className="font-semibold text-white text-sm mx-auto w-max bg-primary px-4 py-2 rounded-full flex items-center gap-1 transition ease-in hover:bg-white hover:text-primary"
           >
             Baixar currículo <MdDownload />
           </a>
