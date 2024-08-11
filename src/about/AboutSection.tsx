@@ -19,20 +19,26 @@ const AboutSection = () => {
           className="w-60"
         />
         <div className="w-full flex flex-col gap-8">
-          <h2 className="md:text-4xl text-3xl font-bold">
-            Diogo Fernando S. Jorge
-          </h2>
-          <p className="md:text-xl text-lg font-semibold text-muted">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
-            autem accusamus doloremque minima, esse, soluta aliquid iste
-            similique adipisci voluptatem facere optio veniam unde suscipit
-            illum. Vel dolorum temporibus suscipit!
-          </p>
-          <p className="md:text-xl text-lg font-semibold text-muted">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
-            autem accusamus doloremque minima, esse, soluta aliquid iste
-            similique adipisci voluptatem facere optio veniam unde suscipit
-            illum. Vel dolorum temporibus suscipit!
+          <div className="flex flex-col gap-2">
+            <h2 className="md:text-6xl text-3xl text-primary">Olá,</h2>
+            <p className="md:text-xl text-lg font-semibold">
+              sou Diogo Jorge, tenho 21 anos e sou formado em Análise e
+              <span className="text-primary"> Desenvolvimento de Sistemas</span>
+              . Foi durante o meu curso que descobri minha paixão pela
+              programação, e desde 2022 tenho me dedicado a criar soluções
+              escaláveis e eficientes para os mais diversos desafios.
+            </p>
+          </div>
+          <p className="md:text-xl text-lg font-semibold">
+            Minha especialidade é trabalhar com a stack JavaScript, incluindo
+            tecnologias como{" "}
+            <span className="text-primary">
+              React, Node.js, Next.js e TypeScript
+            </span>
+            . Gosto de transformar ideias em produtos funcionais, sempre
+            buscando a melhor experiência para o usuário. Se você precisa de
+            alguém para dar vida ao seu projeto ou resolver problemas complexos
+            com criatividade e eficiência, estou aqui para ajudar!
           </p>
           <div className="flex items-center gap-4">
             <a
