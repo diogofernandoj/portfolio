@@ -10,18 +10,18 @@ const HomeSection = () => {
       initial="hidden"
       whileInView="show"
       exit="hidden"
-      className="w-[90%] max-w-3xl md:w-[60%] lg:w-[50%] h-[calc(100vh-7rem)] lg:h-[calc(100vh-10rem)] mx-auto md:pt-40 pt-24 flex flex-col gap-4 justify-center items-center text-center"
+      className="relative w-[90%] max-w-2xl h-screen mx-auto pt-20 flex flex-col gap-4 justify-center items-center"
     >
       <img
         src="/images/profile-pic.svg"
         alt="Foto de perfil"
         className="h-24 w-24"
       />
-      <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">
+      <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">
         Eleve seu negócio ao próximo nível{" "}
         <span className="text-primary">através da tecnologia</span>!
       </h2>
-      <p className="text-muted font-semibold lg:text-lg">
+      <p className="text-muted font-semibold lg:text-lg text-center">
         Eu sou Diogo Jorge, desenvolvedor Full-Stack e aumento a lucratividade
         da sua empresa com soluções inovadoras.
       </p>
@@ -32,6 +32,7 @@ const HomeSection = () => {
       >
         <MdKeyboardDoubleArrowDown size={36} />
       </a>
+      <div className="absolute bg-[url('/images/background.png')] opacity-20 lg:h-1/2 h-1/3 md:w-[calc(100vw-6rem)] w-[calc(100vw-2rem)] z-[-1] bg-cover lg:-bottom-32 -bottom-20" />
     </motion.div>
   );
 };
