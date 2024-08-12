@@ -18,10 +18,9 @@ const ProjectsSection = () => {
       variants={fadeIn("up", 0.5)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.4 }}
       exit="hidden"
       id="projects"
-      className="pt-6"
+      className="pt-20"
     >
       <div className="flex flex-col gap-12 md:hidden">
         {PROJECTS.map((item) => (
