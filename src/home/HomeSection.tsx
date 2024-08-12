@@ -17,14 +17,26 @@ const HomeSection = () => {
         alt="Foto de perfil"
         className="h-24 w-24"
       />
-      <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">
+      <motion.h2
+        variants={fadeIn("up", 0.7)}
+        initial="hidden"
+        whileInView="show"
+        exit="hidden"
+        className="font-bold text-2xl md:text-3xl lg:text-4xl text-center"
+      >
         Eleve seu negócio ao próximo nível{" "}
         <span className="text-primary">através da tecnologia</span>!
-      </h2>
-      <p className="text-muted font-semibold lg:text-lg text-center">
+      </motion.h2>
+      <motion.p
+        variants={fadeIn("up", 0.9)}
+        initial="hidden"
+        whileInView="show"
+        exit="hidden"
+        className="text-muted font-semibold lg:text-lg text-center"
+      >
         Eu sou Diogo Jorge, desenvolvedor Full-Stack e aumento a lucratividade
         da sua empresa com soluções inovadoras.
-      </p>
+      </motion.p>
       <Links />
       <a
         href="#features"

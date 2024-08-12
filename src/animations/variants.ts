@@ -3,9 +3,9 @@ type direction = "up" | "left" | "down" | "right";
 export const fadeIn = (direction: direction, delay: number) => {
   return {
     hidden: {
-      y: direction === "up" ? 30 : direction === "down" ? -30 : 0,
+      y: direction === "up" ? 50 : direction === "down" ? -50 : 0,
       opacity: 0,
-      x: direction === "left" ? 30 : direction === "right" ? -30 : 0,
+      x: direction === "left" ? 50 : direction === "right" ? -50 : 0,
       transition: {
         type: "tween",
         duration: 0.5,

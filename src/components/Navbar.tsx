@@ -17,7 +17,7 @@ import { fadeIn } from "@/animations/variants";
 const Navbar = () => {
   return (
     <motion.nav
-      variants={fadeIn("down", 1)}
+      variants={fadeIn("down", 1.4)}
       initial="hidden"
       whileInView="show"
       exit="hidden"

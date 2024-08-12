@@ -1,8 +1,16 @@
+import { fadeIn } from "@/animations/variants";
+import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Links = () => {
   return (
-    <div className="flex items-center justify-center my-4">
+    <motion.div
+      variants={fadeIn("up", 1.2)}
+      initial="hidden"
+      whileInView="show"
+      exit="hidden"
+      className="flex items-center justify-center my-4"
+    >
       <div className="flex-grow border-t-2 border-muted w-12"></div>
       <div className="flex items-center gap-2 px-2">
         <a href="https://www.linkedin.com/in/diogofernandoj/" target="blank">
@@ -25,7 +33,7 @@ const Links = () => {
         </a>
       </div>
       <div className="flex-grow border-t-2 border-muted w-12"></div>
-    </div>
+    </motion.div>
   );
 };
 
