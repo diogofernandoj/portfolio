@@ -14,9 +14,9 @@ export const PROJECTS = [
     id: 1,
     image_url: "src/assets/images/find-trips.png",
     name: "Find Trips",
-    category: "Sistema de reserva de viagens",
+    category: "Sistema de reserva de hospedagens",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, porro illo perferendis earum eos iste odit tempore, omnis deserunt nam commodi at, enim consequuntur aliquam quae facilis impedit. Voluptate, ex.",
+      "Este projeto é um sistema de reservas online para hospedagens, oferecendo aos usuários uma plataforma intuitiva para encontrar e reservar acomodações em diversos destinos, como hotéis, fazendas, pousadas, e muito mais. Com um catálogo organizado, os usuários podem facilmente selecionar seu destino e realizar sua reserva de maneira rápida e segura.",
     techs: [
       FaReact,
       SiNextdotjs,
@@ -32,9 +32,9 @@ export const PROJECTS = [
     id: 2,
     image_url: "src/assets/images/jota-store.png",
     name: "Jota Store",
-    category: "Ecommerce de periféricos",
+    category: "E-commerce de periféricos",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, porro illo perferendis earum eos iste odit tempore, omnis deserunt nam commodi at, enim consequuntur aliquam quae facilis impedit. Voluptate, ex.",
+      "E-commerce especializado em periféricos gamers, oferecendo uma vasta seleção de produtos como teclados mecânicos, mouses de alta precisão, headsets imersivos e monitores de alta qualidade. O site é projetado para fornecer uma experiência de compra envolvente, com navegação intuitiva, filtros avançados de busca e um sistema seguro de pagamento. Além disso, os usuários podem encontrar ofertas exclusivas e novidades do mundo gamer, garantindo a melhor escolha para elevar seu setup de jogos ao próximo nível.",
     techs: [
       FaReact,
       SiNextdotjs,
@@ -53,7 +53,7 @@ export const PROJECTS = [
     name: "Fin Track (Backend)",
     category: "API para gerenciamento de finanças",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, porro illo perferendis earum eos iste odit tempore, omnis deserunt nam commodi at, enim consequuntur aliquam quae facilis impedit. Voluptate, ex.",
+      "Dashboard financeiro que permite aos usuários gerenciar suas finanças de forma eficiente. Com ele, é possível acompanhar entradas e saídas de dinheiro, monitorar investimentos e visualizar gráficos que ajudam na tomada de decisões financeiras. A interface intuitiva facilita o controle e a análise das finanças pessoais ou empresariais, tudo em um único lugar.",
     techs: [
       FaNodeJs,
       SiPostgresql,
