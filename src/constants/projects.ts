@@ -12,7 +12,7 @@ import { BiLogoTypescript, BiLogoTailwindCss } from "react-icons/bi";
 export const PROJECTS = [
   {
     id: 1,
-    image_url: "src/assets/images/find-trips.png",
+    image_url: "/images/find-trips.png",
     name: "Find Trips",
     category: "Sistema de reserva de hospedagens",
     description:
@@ -30,7 +30,7 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    image_url: "src/assets/images/jota-store.png",
+    image_url: "/images/jota-store.png",
     name: "Jota Store",
     category: "E-commerce de periféricos",
     description:
@@ -49,7 +49,7 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    image_url: "src/assets/images/fin-track.png",
+    image_url: "/images/fin-track.png",
     name: "Fin Track (Backend)",
     category: "API para gerenciamento de finanças",
     description:
