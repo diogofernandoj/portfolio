@@ -11,22 +11,22 @@ const AboutSection = () => {
       viewport={{ once: true, amount: 0.3 }}
       exit="hidden"
       id="about"
-      className="flex justify-center items-center my-12 p-5"
+      className="flex justify-center items-center my-20 pt-8"
     >
-      <div className="lg:flex-row lg:w-[70%] max-w-5xl flex flex-col items-center gap-12 w-[80%]">
+      <div className="lg:flex-row lg:w-[70%] max-w-5xl flex flex-col items-center gap-12 w-[90%]">
         <img
           src="src/assets/images/guy-with-certificate.svg"
           className="w-60"
         />
         <div className="w-full flex flex-col gap-8">
           <div className="flex flex-col gap-2">
-            <h2 className="md:text-6xl text-3xl text-primary">Olá,</h2>
+            <h2 className="md:text-6xl text-5xl text-primary">Olá,</h2>
             <p className="md:text-xl text-lg font-semibold">
               sou Diogo Jorge, tenho 21 anos e sou formado em Análise e
-              <span className="text-primary"> Desenvolvimento de Sistemas</span>
-              . Foi durante o meu curso que descobri minha paixão pela
-              programação, e desde 2022 tenho me dedicado a criar soluções
-              escaláveis e eficientes para os mais diversos desafios.
+              Desenvolvimento de Sistemas. Foi durante o meu curso que descobri
+              minha paixão pela programação, e desde 2022 tenho me dedicado a
+              criar soluções escaláveis e eficientes para os mais diversos
+              desafios.
             </p>
           </div>
           <p className="md:text-xl text-lg font-semibold">
