@@ -24,7 +24,7 @@ const Navbar = () => {
       className="w-full h-20 border-b border-solid border-border bg-background fixed z-20"
     >
       <div className="w-4/5 h-full mx-auto flex justify-between items-center">
-        <a href="#" className="font-bold text-2xl hover:animate-pulse">
+        <a href="#" className="font-bold text-2xl">
           Diogo<span className="text-primary">.</span>
         </a>
 
