@@ -14,7 +14,10 @@ const AboutSection = () => {
       className="flex justify-center items-center my-20 pt-8"
     >
       <div className="lg:flex-row lg:w-[70%] max-w-5xl flex flex-col items-center gap-12 w-[90%]">
-        <img src="/images/guy-with-certificate.svg" className="w-60" />
+        <img
+          src="/images/profile2.png"
+          className="w-80 h-auto border-2 border-solid border-white rounded-full"
+        />
         <div className="w-full flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <h2 className="md:text-6xl text-5xl text-primary">Olá,</h2>

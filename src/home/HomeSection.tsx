@@ -10,18 +10,21 @@ const HomeSection = () => {
       initial="hidden"
       whileInView="show"
       exit="hidden"
+      viewport={{ once: true }}
       className="relative w-[90%] max-w-2xl h-screen mx-auto pt-20 flex flex-col gap-4 justify-center items-center"
     >
       <img
-        src="/images/profile-pic.svg"
+        src="/images/profile.png"
         alt="Foto de perfil"
-        className="h-24 w-24"
+        className="h-48 w-48 border-2 border-solid border-white rounded-full"
       />
+
       <motion.h2
         variants={fadeIn("up", 0.7)}
         initial="hidden"
         whileInView="show"
         exit="hidden"
+        viewport={{ once: true }}
         className="font-bold text-2xl md:text-3xl lg:text-4xl text-center"
       >
         Eleve seu negócio ao próximo nível{" "}
@@ -32,6 +35,7 @@ const HomeSection = () => {
         initial="hidden"
         whileInView="show"
         exit="hidden"
+        viewport={{ once: true }}
         className="text-muted font-semibold lg:text-lg text-center"
       >
         Eu sou Diogo Jorge, desenvolvedor Full-Stack e aumento a lucratividade
