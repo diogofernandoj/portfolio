@@ -16,6 +16,7 @@ const FeaturesSection = () => {
         initial="hidden"
         whileInView="show"
         exit="hidden"
+        viewport={{ once: true }}
         className="md:flex-row h-full w-10/12 mx-auto flex flex-col gap-8 py-8 items-center justify-center text-center"
       >
         <div className="flex flex-col gap-2 items-center flex-1">

@@ -21,6 +21,7 @@ const Navbar = () => {
       initial="hidden"
       whileInView="show"
       exit="hidden"
+      viewport={{ once: true }}
       className="w-full h-20 border-b border-solid border-border bg-background fixed z-20"
     >
       <div className="w-4/5 h-full mx-auto flex justify-between items-center">

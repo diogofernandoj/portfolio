@@ -19,6 +19,7 @@ const ProjectsSection = () => {
       initial="hidden"
       whileInView="show"
       exit="hidden"
+      viewport={{ once: true }}
       id="projects"
       className="pt-20"
     >

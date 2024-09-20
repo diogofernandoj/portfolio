@@ -61,6 +61,7 @@ const SkillsSection = () => {
         initial="hidden"
         whileInView="show"
         exit="hidden"
+        viewport={{ once: true }}
         className="text-center font-bold text-3xl mt-12 mb-8"
       >
         Tecnologias<span className="text-primary">.</span>
@@ -70,6 +71,7 @@ const SkillsSection = () => {
         initial="hidden"
         whileInView="show"
         exit="hidden"
+        viewport={{ once: true }}
         className="flex gap-6 w-auto animate-slide"
       >
         {logos.concat(logos).map((logo, index) => (

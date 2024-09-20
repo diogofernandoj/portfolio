@@ -9,6 +9,7 @@ const Links = () => {
       initial="hidden"
       whileInView="show"
       exit="hidden"
+      viewport={{ once: true }}
       className="flex items-center justify-center my-4"
     >
       <div className="flex-grow border-t-2 border-muted w-12"></div>
