@@ -25,10 +25,11 @@ const HomeSection = () => {
         whileInView="show"
         exit="hidden"
         viewport={{ once: true }}
-        className="font-bold text-2xl md:text-3xl lg:text-4xl text-center"
+        className="font-semibold text-2xl md:text-3xl lg:text-4xl text-center"
       >
-        Eleve seu negócio ao próximo nível{" "}
-        <span className="text-primary">através da tecnologia</span>!
+        Um bom <span className="text-primary font-bold">site</span> pode mudar{" "}
+        <span className="text-primary font-bold">rumo</span> o do seu{" "}
+        <span className="text-primary font-bold">negócio!</span>
       </motion.h2>
       <motion.p
         variants={fadeIn("up", 0.9)}
@@ -36,10 +37,10 @@ const HomeSection = () => {
         whileInView="show"
         exit="hidden"
         viewport={{ once: true }}
-        className="text-muted font-semibold lg:text-lg text-center"
+        className="text-muted lg:text-lg text-center"
       >
         Eu sou Diogo Jorge, desenvolvedor Full-Stack e aumento a lucratividade
-        da sua empresa com soluções inovadoras.
+        da sua empresa através da tecnologia.
       </motion.p>
       <Links />
       <a
