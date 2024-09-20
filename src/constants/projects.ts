@@ -34,7 +34,7 @@ export const PROJECTS = [
     name: "Jota Store",
     category: "E-commerce de periféricos",
     description:
-      "E-commerce especializado em periféricos gamers, oferecendo uma vasta seleção de produtos como teclados mecânicos, mouses de alta precisão, headsets imersivos e monitores de alta qualidade. O site é projetado para fornecer uma experiência de compra envolvente, com navegação intuitiva, filtros avançados de busca e um sistema seguro de pagamento. Além disso, os usuários podem encontrar ofertas exclusivas e novidades do mundo gamer, garantindo a melhor escolha para elevar seu setup de jogos ao próximo nível.",
+      "E-commerce especializado em periféricos gamers, com produtos como teclados, mouses, headsets e monitores. O site oferece navegação intuitiva, filtros avançados, pagamento seguro e promoções exclusivas para otimizar setups de jogos.",
     techs: [
       FaReact,
       SiNextdotjs,
@@ -53,7 +53,7 @@ export const PROJECTS = [
     name: "Fin Track (Backend)",
     category: "API para gerenciamento de finanças",
     description:
-      "Dashboard financeiro que permite aos usuários gerenciar suas finanças de forma eficiente. Com ele, é possível acompanhar entradas e saídas de dinheiro, monitorar investimentos e visualizar gráficos que ajudam na tomada de decisões financeiras. A interface intuitiva facilita o controle e a análise das finanças pessoais ou empresariais, tudo em um único lugar.",
+      "Dashboard financeiro que facilita o gerenciamento de finanças, permitindo acompanhar entradas e saídas, monitorar investimentos e visualizar gráficos para apoiar decisões. A interface intuitiva centraliza o controle financeiro pessoal ou empresarial.",
     techs: [
       FaNodeJs,
       SiPostgresql,
