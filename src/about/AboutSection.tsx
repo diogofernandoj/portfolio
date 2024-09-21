@@ -15,7 +15,7 @@ const AboutSection = () => {
     >
       <div className="lg:flex-row lg:w-[80%] max-w-5xl flex flex-col items-center gap-12 w-[90%]">
         <img
-          src="/images/profile3.png"
+          src="/images/profile2.png"
           className="w-96 h-auto border-2 border-solid border-border shadow-border shadow-lg rounded-full"
         />
         <div className="w-full flex flex-col gap-8">
