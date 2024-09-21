@@ -27,8 +27,8 @@ const HomeSection = () => {
         viewport={{ once: true }}
         className="font-semibold text-2xl md:text-3xl lg:text-4xl text-center"
       >
-        Um bom <span className="text-primary font-bold">site</span> pode mudar{" "}
-        <span className="text-primary font-bold">rumo</span> o do seu{" "}
+        Um bom <span className="text-primary font-bold">site</span> pode mudar o{" "}
+        <span className="text-primary font-bold">rumo</span> do seu{" "}
         <span className="text-primary font-bold">negócio!</span>
       </motion.h2>
       <motion.p
