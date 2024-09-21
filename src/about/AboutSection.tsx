@@ -13,10 +13,10 @@ const AboutSection = () => {
       id="about"
       className="flex justify-center items-center my-20 pt-8"
     >
-      <div className="lg:flex-row lg:w-[70%] max-w-5xl flex flex-col items-center gap-12 w-[90%]">
+      <div className="lg:flex-row lg:w-[80%] max-w-5xl flex flex-col items-center gap-12 w-[90%]">
         <img
-          src="/images/profile2.png"
-          className="w-80 h-auto border-2 border-solid border-white rounded-full"
+          src="/images/profile3.png"
+          className="w-96 h-auto border-2 border-solid border-border shadow-border shadow-lg rounded-full"
         />
         <div className="w-full flex flex-col gap-8">
           <div className="flex flex-col gap-2">
