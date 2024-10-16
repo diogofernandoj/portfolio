@@ -65,8 +65,8 @@ const Navbar = () => {
             Fale comigo
           </a>
           <a
-            href="cv.pdf"
-            download="cv"
+            href="Diogo-Jorge-CV.pdf"
+            download="Diogo-Jorge-CV"
             className="font-semibold text-white text-sm bg-primary px-4 py-2 rounded-full flex items-center gap-1 transition ease-in hover:bg-white hover:text-primary"
           >
             Baixar currículo <MdDownload />
@@ -103,8 +103,8 @@ const Navbar = () => {
                 Fale comigo
               </a>
               <a
-                href="cv.pdf"
-                download="cv"
+                href="Diogo-Jorge-CV.pdf"
+                download="Diogo-Jorge-CV"
                 className="font-semibold text-white text-sm mx-auto w-max bg-primary px-4 py-2 rounded-full flex items-center gap-1"
               >
                 Baixar currículo <MdDownload />
