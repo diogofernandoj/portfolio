@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { fadeIn } from "@/app/_animations/variants";
 import Links from "./links";
+import Image from "next/image";
 
 const HomeSection = () => {
   return (
@@ -15,7 +16,7 @@ const HomeSection = () => {
       viewport={{ once: true }}
       className="relative w-[90%] max-w-2xl h-screen mx-auto pt-20 flex flex-col gap-4 justify-center items-center"
     >
-      <img
+      <Image
         src="/images/profile.png"
         alt="Foto de perfil"
         className="h-48 w-48 border-2 border-solid border-white rounded-full"

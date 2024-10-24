@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { fadeIn } from "@/app/_animations/variants";
+import Image from "next/image";
 
 const AboutSection = () => {
   return (
@@ -16,8 +17,9 @@ const AboutSection = () => {
       className="flex justify-center items-center my-20 pt-8"
     >
       <div className="lg:flex-row lg:w-[80%] max-w-5xl flex flex-col items-center gap-12 w-[90%]">
-        <img
+        <Image
           src="/images/profile2.png"
+          alt="Foto de perfil"
           className="w-96 h-auto border-2 border-solid border-border shadow-border shadow-lg rounded-full"
         />
         <div className="w-full flex flex-col gap-8">

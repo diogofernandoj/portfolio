@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { IconType } from "react-icons";
 
 interface ProjectItemProps {
@@ -18,7 +19,7 @@ interface ProjectItemProps {
 const ProjectItem = ({ project }: ProjectItemProps) => {
   return (
     <div className="flex lg:flex-row flex-col gap-12 px-4">
-      <img
+      <Image
         src={project.image_url}
         alt={project.name}
         className="rounded-xl lg:w-1/2"
