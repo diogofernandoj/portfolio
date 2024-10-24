@@ -8,7 +8,7 @@ import FeatureItem from "./feature-item";
 
 const FeaturesSection = () => {
   return (
-    <div
+    <section
       id="benefits"
       className="flex flex-col gap-12 lg:gap-28 mt-12 p-8 lg:p-20 lg:flex-row min-h-screen"
     >
@@ -44,7 +44,7 @@ const FeaturesSection = () => {
           <FeatureItem key={item.id} feature={item} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -16,7 +16,7 @@ import { fadeIn } from "@/app/_animations/variants";
 
 const Header = () => {
   return (
-    <motion.nav
+    <motion.header
       variants={fadeIn("down", 1.4)}
       initial="hidden"
       whileInView="show"
@@ -29,7 +29,7 @@ const Header = () => {
           Diogo<span className="text-primary">.</span>
         </a>
 
-        <div className="hidden items-center lg:flex">
+        <nav className="hidden items-center lg:flex">
           <a
             href="#"
             className="text-muted font-semibold px-4 py-2 rounded-lg ease-in transition-all hover:bg-border hover:text-white"
@@ -54,9 +54,9 @@ const Header = () => {
           >
             Quem sou
           </a>
-        </div>
+        </nav>
 
-        <div className="lg:flex items-center gap-4 hidden">
+        <nav className="lg:flex items-center gap-4 hidden">
           <a
             target="blank"
             href="https://linkwhats.app/445301"
@@ -71,7 +71,7 @@ const Header = () => {
           >
             Baixar currículo <MdDownload />
           </a>
-        </div>
+        </nav>
         <div className="lg:hidden">
           <Sheet>
             <SheetTitle></SheetTitle>
@@ -114,7 +114,7 @@ const Header = () => {
           </Sheet>
         </div>
       </div>
-    </motion.nav>
+    </motion.header>
   );
 };
 

@@ -16,7 +16,7 @@ import ProjectItem from "./project-item";
 
 const ProjectsSection = () => {
   return (
-    <motion.div
+    <motion.section
       variants={fadeIn("up", 0.5)}
       initial="hidden"
       whileInView="show"
@@ -51,7 +51,7 @@ const ProjectsSection = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-    </motion.div>
+    </motion.section>
   );
 };
 

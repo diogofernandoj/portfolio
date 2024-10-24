@@ -6,7 +6,7 @@ import { fadeIn } from "@/app/_animations/variants";
 
 const AboutSection = () => {
   return (
-    <motion.div
+    <motion.section
       variants={fadeIn("up", 0.5)}
       initial="hidden"
       whileInView="show"
@@ -60,7 +60,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

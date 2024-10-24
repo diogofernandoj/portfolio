@@ -7,7 +7,7 @@ import Links from "./links";
 
 const HomeSection = () => {
   return (
-    <motion.div
+    <motion.section
       variants={fadeIn("up", 0.5)}
       initial="hidden"
       whileInView="show"
@@ -52,7 +52,7 @@ const HomeSection = () => {
         <MdKeyboardDoubleArrowDown size={36} />
       </a>
       <div className="absolute bg-[url('/images/background.png')] opacity-20 lg:h-1/2 h-1/3 md:w-[calc(100vw-6rem)] w-[calc(100vw-2rem)] z-[-1] bg-cover lg:-bottom-32 -bottom-20" />
-    </motion.div>
+    </motion.section>
   );
 };
 
