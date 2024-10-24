@@ -1,7 +1,9 @@
+import HomeSection from "./_components/home-section";
+
 const App = () => {
   return (
-    <div>
-      <h2>Hello world!</h2>
+    <div className="flex flex-col">
+      <HomeSection />
     </div>
   );
 };

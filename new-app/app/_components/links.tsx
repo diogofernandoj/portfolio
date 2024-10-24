@@ -1,4 +1,4 @@
-import { fadeIn } from "@/animations/variants";
+import { fadeIn } from "@/app/_animations/variants";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 

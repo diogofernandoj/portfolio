@@ -1,7 +1,9 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-import Links from "./Links";
-import { fadeIn } from "@/animations/variants";
+import { fadeIn } from "@/app/_animations/variants";
+import Links from "./links";
 
 const HomeSection = () => {
   return (
