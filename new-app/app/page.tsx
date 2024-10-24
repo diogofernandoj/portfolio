@@ -1,6 +1,7 @@
 import AboutSection from "./_components/about-section";
 import Cards from "./_components/cards";
 import FeaturesSection from "./_components/features-section";
+import Footer from "./_components/footer";
 import Header from "./_components/header";
 import HomeSection from "./_components/home-section";
 import ProjectsSection from "./_components/projects-section";
@@ -16,6 +17,7 @@ const App = () => {
       <Skills />
       <ProjectsSection />
       <AboutSection />
+      <Footer />
     </div>
   );
 };
