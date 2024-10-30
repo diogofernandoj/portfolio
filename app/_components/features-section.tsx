@@ -28,7 +28,7 @@ const FeaturesSection = () => {
           digital, entenda o que um site profissional é capaz de fazer por você.
         </p>
         <a
-          href="https://linkwhats.app/445301"
+          href="https://wa.link/6roemu"
           target="blank"
           className="text-primary font-semibold flex items-center gap-2 transition hover:underline mt-4"
         >

@@ -59,7 +59,7 @@ const Header = () => {
         <nav className="lg:flex items-center gap-4 hidden">
           <a
             target="blank"
-            href="https://linkwhats.app/445301"
+            href="https://wa.link/6roemu"
             className="font-semibold text-primary text-center hover:underline"
           >
             Fale comigo
@@ -97,7 +97,7 @@ const Header = () => {
               <Separator />
               <a
                 target="blank"
-                href="https://linkwhats.app/445301"
+                href="https://wa.link/6roemu"
                 className="font-semibold text-primary text-center"
               >
                 Fale comigo

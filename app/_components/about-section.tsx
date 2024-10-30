@@ -17,7 +17,7 @@ const AboutSection = () => {
       className="flex justify-center items-center my-20 pt-8"
     >
       <div className="lg:flex-row lg:w-[80%] max-w-5xl flex flex-col items-center gap-12 w-[90%]">
-        <Image
+        <img
           src="/images/profile2.png"
           alt="Foto de perfil"
           className="w-96 h-auto border-2 border-solid border-border shadow-border shadow-lg rounded-full"
@@ -46,7 +46,7 @@ const AboutSection = () => {
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="https://linkwhats.app/445301"
+              href="https://wa.link/6roemu"
               target="blank"
               className="border-2 border-solid border-border px-4 py-2 rounded-md flex items-center gap-1 text-sm font-semibold transition hover:bg-border"
             >

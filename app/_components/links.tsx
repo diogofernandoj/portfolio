@@ -26,7 +26,7 @@ const Links = () => {
             className="text-muted transition hover:text-white hover:-translate-y-1"
           />
         </a>
-        <a href="https://linkwhats.app/445301" target="blank">
+        <a href="https://wa.link/6roemu" target="blank">
           <FaWhatsapp
             size={28}
             className="text-muted transition hover:text-white hover:-translate-y-1"

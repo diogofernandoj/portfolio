@@ -19,6 +19,8 @@ const HomeSection = () => {
       <Image
         src="/images/profile.png"
         alt="Foto de perfil"
+        width={200}
+        height={200}
         className="h-48 w-48 border-2 border-solid border-white rounded-full"
       />
 

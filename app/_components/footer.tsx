@@ -66,7 +66,7 @@ const Footer = () => {
             </li>
             <li className="text-lg">
               <a
-                href="https://linkwhats.app/445301"
+                href="https://wa.link/6roemu"
                 target="blank"
                 className="text-muted transition ease-in hover:text-white"
               >
